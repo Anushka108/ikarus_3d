@@ -87,4 +87,4 @@ def generate_description(prompt: str = Query(..., description="Generate creative
 #  Run the backend server
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=7500, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=7600, reload=True)

@@ -16,8 +16,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the entire backend directory
 COPY . .
 
-# Expose port 7500
-EXPOSE 7500
+# Expose port 7600
+EXPOSE 7600
 
 # Run the FastAPI application
 CMD ["python", "main.py"]
