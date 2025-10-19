@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+torch
+sentence-transformers
+Pillow
+transformers
+torchvision
+numpy
