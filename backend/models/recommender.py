@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer, util
 class Recommender:
     
 
-    def __init__(self, csv_path=r"D:\\Placements\\my_ikarus\\intern_data_ikarus.csv"):
+    def __init__(self, csv_path=("intern_data_ikarus.csv")):
         self.csv_path = csv_path
         self.df = None
         self.model = None

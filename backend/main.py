@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
-from models.recommender import Recommender
-from models.vision_model import VisionModel
-from models.genai import GenAIModel
+from backend.models.recommender import Recommender
+from backend.models.vision_model import VisionModel
+from backend.models.genai import GenAIModel
 
 #  Create FastAPI app
 app = FastAPI(title="Furniture Product Recommendation API")
@@ -18,7 +18,7 @@ app.add_middleware(
 
 #  Initialize models
 try:
-    recommender = Recommender(r"D:\\Placements\\my_ikarus\\intern_data_ikarus.csv")
+    recommender = Recommender(r"intern_data_ikarus.csv")
     vision = VisionModel()
     genai = GenAIModel()
 except Exception as e:

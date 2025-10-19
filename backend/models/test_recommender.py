@@ -2,7 +2,7 @@
 from recommender import Recommender
 
 # initialize the recommender
-rec = Recommender("D:\\Placements\\my_ikarus\\intern_data_ikarus.csv")
+rec = Recommender("intern_data_ikarus.csv")
 
 # give a test query
 query = "modern wooden chair"
