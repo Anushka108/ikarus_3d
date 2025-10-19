@@ -9,7 +9,7 @@ function AnalyticsPage() {
   useEffect(() => {
     setProducts(null);
     setError(null);
-    fetch(`http://localhost:8000/recommend?query=${encodeURIComponent(searchTerm)}`)
+    fetch(`https://genaihackathon.aup.events:7500/recommend?query=${encodeURIComponent(searchTerm)}`)
       .then(r => {
         if (!r.ok) throw new Error('recommend fetch failed');
         return r.json();

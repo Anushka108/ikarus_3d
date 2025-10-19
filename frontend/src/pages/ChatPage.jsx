@@ -13,7 +13,7 @@ function ChatPage(){
     setLoading(true)
     try{
       // Backend expects GET /recommend?query=... and returns { query, recommendations: [...] }
-      const url = `http://localhost:8000/recommend?query=${encodeURIComponent(userMsg.text)}`
+      const url = `https://genaihackathon.aup.events:7500/recommend?query=${encodeURIComponent(userMsg.text)}`
       const res = await fetch(url, { method: 'GET' })
       const data = await res.json()
 
