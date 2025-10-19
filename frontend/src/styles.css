@@ -1,0 +1,48 @@
+:root{
+  --ikarus-primary: #3b82f6; /* vibrant blue */
+  --ikarus-accent: #7c3aed; /* purple accent */
+  --ikarus-gradient: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+  --ikarus-card: rgba(255,255,255,0.9);
+}
+
+body{
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+  min-height: 100vh;
+}
+
+.navbar-ikarus{
+  background: var(--ikarus-gradient);
+  color: white;
+}
+.navbar-ikarus .navbar-brand, .navbar-ikarus .nav-link, .navbar-ikarus .btn{
+  color: white !important;
+}
+
+.brand-logo{
+  height: 36px;
+  margin-right: 8px;
+}
+
+.card.ikarus-card{
+  background: var(--ikarus-card);
+  border: none;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  border-radius: 12px;
+}
+
+.btn-ikarus{
+  background: var(--ikarus-accent);
+  border: none;
+  color: white;
+}
+
+.btn-ikarus-outline{
+  color: var(--ikarus-accent);
+  border-color: rgba(124,58,237,0.18);
+}
+
+.page-header{
+  background: linear-gradient(90deg, rgba(59,130,246,0.06), rgba(124,58,237,0.06));
+  padding: 18px;
+  border-radius: 10px;
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="50" fill="transparent" />
+  <g fill="url(#g)">
+    <path d="M10 40 L30 10 L50 40 Z" />
+  </g>
+  <text x="62" y="34" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111827">Ikarus <tspan fill="url(#g)">3D</tspan></text>
+</svg>
