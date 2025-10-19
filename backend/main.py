@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
-from backend.models.recommender import Recommender
-from backend.models.vision_model import VisionModel
-from backend.models.genai import GenAIModel
+from models.recommender import Recommender
+from models.vision_model import VisionModel
+from models.genai import GenAIModel
 
 #  Create FastAPI app
 app = FastAPI(title="Furniture Product Recommendation API")
@@ -87,4 +87,4 @@ def generate_description(prompt: str = Query(..., description="Generate creative
 #  Run the backend server
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("backend.main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=7500, reload=True)
